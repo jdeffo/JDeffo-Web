@@ -1,4 +1,17 @@
-<!--DOCUMENATION-->
+<!--DOCUMENATION Log-->
+
+Developed by Jeremy DeFossett
+Graphics by Heath Bauman
 
 12/14/16
 Cloned github locally.
+Initialized angular setup
+
+Packages installed:
+git-plus
+platformio-ide-terminal
+language-typsecript-grammars-only
+
+Installed:
+node.js
+Angular CLI
