@@ -8,10 +8,33 @@ Cloned github locally.
 Initialized angular setup
 
 Packages installed:
-git-plus
-platformio-ide-terminal
-language-typsecript-grammars-only
+  git-plus
+  platformio-ide-terminal
+  language-typsecript-grammars-only
 
 Installed:
-node.js
-Angular CLI
+  node.js
+  Angular CLI
+
+12/20/16
+Looked into Angular 2, don't see the fit for this project, reverted to Angular 1
+
+Folders/Files added:
+  app
+    lib
+      angular-route.min.js
+      angular.min.js
+    module.js
+  Content
+    Bootstrap
+      ...
+    JDeffoStyles.css
+  Views
+    About.html
+    Contact.html
+    Home.html
+    Portfolio.html
+    Resume.html
+
+Packages installed:
+  atom-live-server (ctrl-shift-3 launch live server on port 3000.)
