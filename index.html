@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="JDeffoApp">
   <head>
-    <title>Title</title>
-    <link ref="Content\JDeffoStyles.css" rel="stylesheet" type="text/css" />
-    <link ref="Content\Bootstrap\css\bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="app\lib\angular.min.js"></script>
-    <script src="app\lib\angular.min.js"></script>
-    <script src="app\module.js">
+    <title>Jeremy DeFossett</title>
+    <link href="Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/JDeffoStyles.css" rel="stylesheet" type="text/css" />
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-route.min.js"></script>
+    <script src="app/moduleConfig.js"></script>
   </head>
-  <body>
+
+  <body ng-app="JDeffoApp" class="JDBackground">
+
+  <header ng-include="'Views/NavBar.html'"></header>
+
     <main ng-view></main>
   </body>
+
 </html>

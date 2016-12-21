@@ -16,7 +16,7 @@ Installed:
   node.js
   Angular CLI
 
-12/20/16
+12/19/16
 Looked into Angular 2, don't see the fit for this project, reverted to Angular 1
 
 Folders/Files added:
@@ -38,3 +38,19 @@ Folders/Files added:
 
 Packages installed:
   atom-live-server (ctrl-shift-3 launch live server on port 3000.)
+
+  12/20/16
+  Finished routing
+  Created initial Bootstrap Navigation
+  Began Home Screen, image of louisville at top
+  Seeking graphic design from Heath
+
+  Folders/Files added:
+    NavBar.html
+    Controllers
+      HomeController.js
+    Images
+      Louisville.png
+      Louisville2.png
+    angular-route.js
+    angular-route.min.js.map
