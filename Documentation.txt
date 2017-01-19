@@ -54,3 +54,7 @@ Packages installed:
       Louisville2.png
     angular-route.js
     angular-route.min.js.map
+
+    1/11/17
+    Took break for Aspen trip.
+    Heath is finishing up graphic design
