@@ -11,7 +11,7 @@ Alphabetical
 /*--NAVBAR-*/
 .JDNavWrapper {
   padding-bottom: 0;
-
+  border-color: 
   display: block;
 }
 
@@ -42,11 +42,12 @@ Alphabetical
 .JDTitleWrapper {
   background-color: e9e9f4;
   text-align: center;
-  margin-top: -5%;
+  margin-top: -7%;
 }
 
 .JDName {
   font-family: Bebas Neue;
+  font-size: 400%;
 }
 
 .JDComp {
@@ -67,4 +68,22 @@ Alphabetical
   margin-left: 15%;
   margin-top: -13.3%;
   padding-right: 2%;
+}
+
+.JDButtonHold {
+  width: 86.5%;
+  padding: 0;
+  text-align: center;
+}
+
+.JDResumeButton {
+  position: relative;
+  background-color: #c2b0d7;
+  color: black;
+  border-color: #c2b0d7;
+}
+
+.JDPortfolioWrapper {
+  width: 100%;
+  background-color: #b5b5ce;
 }
