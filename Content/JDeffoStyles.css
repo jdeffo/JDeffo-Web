@@ -11,12 +11,17 @@ Alphabetical
 /*--NAVBAR-*/
 .JDNavWrapper {
   padding-bottom: 0;
-  border-color: 
+  border-color:
   display: block;
 }
 
 .JDNavText {
   font-family: Bebas Neue;
+}
+
+.JDLogo {
+  width: 50%;
+  margin-top: -7%;
 }
 
 /*--HOME--*/
@@ -36,6 +41,7 @@ Alphabetical
 
 .JDMount {
   margin-top: 0;
+  width: 100%;
   /*opacity: 50%;*/
 }
 
