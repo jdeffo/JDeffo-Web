@@ -58,3 +58,19 @@ Packages installed:
     1/11/17
     Took break for Aspen trip.
     Heath is finishing up graphic design
+
+    1/23/17
+    Forgot to document much of the progress I made in the previous week.
+    Heath finished up graphic design.
+    Began laying out the UI and it is almost complete.  Code is not the best or scaleable, but I will fix this once I have the design laid out
+
+Folders/Files added:
+    Content
+        Intro.txt
+    Downloadables
+        Resume-DeFossett.docx (Will change to pdf)
+    Images
+        JDLogo.png
+        SelfPort.jpg
+        snowMount.jpg
+        snowMountFullRes.jpg

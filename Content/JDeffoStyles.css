@@ -62,7 +62,7 @@ Alphabetical
 }
 
 .JDSelfPort {
-    width: 10%;
+    width: 14%;
     margin-left: 3%;
     float: left;
 }
@@ -71,8 +71,8 @@ Alphabetical
   font-family: Bebas Neue;
   font-size: 150%;
   float: left;
-  margin-left: 15%;
-  margin-top: -13.3%;
+  margin-left: 19%;
+  margin-top: -14.5%;
   padding-right: 2%;
 }
 
@@ -92,4 +92,8 @@ Alphabetical
 .JDPortfolioWrapper {
   width: 100%;
   background-color: #b5b5ce;
+}
+
+.JDCodeSampleContainer {
+  font-family: Bebas Neue;
 }
