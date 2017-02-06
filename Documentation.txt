@@ -74,3 +74,11 @@ Folders/Files added:
         SelfPort.jpg
         snowMount.jpg
         snowMountFullRes.jpg
+
+    1/26/17
+      Looking into Digital Ocean droplets for the server to host this and other projects
+
+   2/6/17
+      Haven't had much time with school
+      As of now, will be using Digital Ocean
+      Planning to finish the first stage of development by next week
