@@ -82,3 +82,10 @@ Folders/Files added:
       Haven't had much time with school
       As of now, will be using Digital Ocean
       Planning to finish the first stage of development by next week
+
+ 2/20/17
+    Folders/Files added:
+      Images
+        stockCode1.jpeg
+        stockCode2.jpeg
+        stockCode3.jpeg
