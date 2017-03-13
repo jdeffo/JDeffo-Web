@@ -89,3 +89,8 @@ Folders/Files added:
         stockCode1.jpeg
         stockCode2.jpeg
         stockCode3.jpeg
+
+3/13/17
+  Spring break, back to developing
+  Finished Portfolio section.  Used stock photos.  Some refactoring needs done at the end
+  Beginning contact section.  Need Heath to pull images from PSD.

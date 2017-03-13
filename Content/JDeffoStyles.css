@@ -92,8 +92,49 @@ Alphabetical
 .JDPortfolioWrapper {
   width: 100%;
   background-color: #b5b5ce;
+  height: 535px;
+  font-family: Bebas Neue;
+  position: relative;
 }
 
 .JDCodeSampleContainer {
-  font-family: Bebas Neue;
+  width: 100%;
+}
+
+.JDProjLine {
+  width: 100%;
+  position: relative;
+
+}
+
+.blank {
+  float: left;
+  visibility: hidden;
+}
+
+.JDSamp1 {
+  position: relative;
+  width: 28%;
+  margin-left: 4%;
+  float: left;
+  text-align: center;
+  color: black;
+}
+
+.JDSamp2 {
+  position: relative;
+  width: 28%;
+  margin-left: 4%;
+  float: left;
+  text-align: center;
+  color: black;
+}
+
+.JDSamp3 {
+  position: relative;
+  width: 28%;
+  margin-left: 4%;
+  text-align: center;
+  color: black;
+  float: left;
 }
