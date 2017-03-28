@@ -138,3 +138,25 @@ Alphabetical
   color: black;
   float: left;
 }
+
+.JDLinkedinContact {
+  position: relative;
+  width: 15%;
+  margin-left: 13.75%;
+  margin-top: 1.5%;
+  float: left;
+}
+
+.JDGithubContact {
+  position: relative;
+  width: 15%;
+  margin-left: 13.75%;
+  float: left;
+}
+
+.JDEmailContact {
+  position: relative;
+  width: 12%;
+  margin-left: 16.75%;
+  float: left;
+}
