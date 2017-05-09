@@ -94,3 +94,9 @@ Folders/Files added:
   Spring break, back to developing
   Finished Portfolio section.  Used stock photos.  Some refactoring needs done at the end
   Beginning contact section.  Need Heath to pull images from PSD.
+
+  5/9/17
+  Redid the home html, and the styles css
+  Fixed many align issues
+  Version 1 complete
+  No Javascript functions currently
