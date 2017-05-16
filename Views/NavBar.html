@@ -1,4 +1,4 @@
-<div class="JDNavWrapper">
+<div ng-app="JDeffoApp" ng-controller="HomeController" class="JDNavWrapper">
   <nav class="navbar navbar-inverse navbar-fixed-top" style="border-style: none;">
     <div class="container-fluid" style="background-color: #888789;">
       <div class="navbar-header">
@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav pull-right JDNavText">
           <li><a href="#" style="color: black; font-size: 140%;">Introduction</a></li>
           <li><a href="#/portfolio" style="color: black; font-size: 140%;">Portfolio</a></li>
-          <li><a href="#/resume" style="color: black; font-size: 140%;">Contact</a></li>
+          <li><a href ng-click="hctrl.controller.testText='Success'" style="color: black; font-size: 140%;">Contact</a></li>
         </ul>
       </div>
     </div>

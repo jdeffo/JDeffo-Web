@@ -1,21 +1,34 @@
-var JDeffoApp = angular.module('JDeffoApp');
+var JDeffoApp = angular.module('JDeffoApp', ['ngRoute', 'ui.bootstrap']);
 
-JDeffoApp.controller('HomeController', function($uibModal) {
+JDeffoApp.config(['$routeProvider', function($routeProvider){
+
+    $routeProvider
+        .when('/home', {
+            templateUrl: 'Views/Home.html',
+            controller: 'HomeController',
+            controllerAs: 'hctrl',
+        })
+        .otherwise({
+            redirectTo: '/home'
+        });
+}]);
+
+JDeffoApp.controller('HomeController', function($uibModal){
     var vm = this;
 
     vm.controller = {
 
         testText: "This is a test",
 
-        showContactModal: function () {
-            vm.setDisplay('contactModal', true);
+        showContactModal: function() {
+            this.setDisplay('contactModal', true);
         },
 
         htmlTemplates: {
-            contactModalTemplate: 'Views/ContactModal.html',
+            contactModalTemplate: 'Views\ContactModal.html',
         },
 
-        setDisplay: function (element, value) {
+        setDisplay: function(element, value) {
             switch (element) {
                 case 'contactModal':
                     this.openModal(this.htmlTemplates.contactModalTemplate, value);
