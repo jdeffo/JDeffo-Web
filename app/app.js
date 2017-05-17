@@ -55,15 +55,21 @@ JDeffoApp.controller('HomeController', function($uibModal){
 JDeffoApp.controller('HomeModalController', function($uibModalInstance){
     var hmctrl = this;
 
-
     hmctrl.close = function () {
         $uibModalInstance.dismiss('cancel');
     };
 
-    hmctrl.sendMessage = function () {
-        this.close();
+    hmctrl.contact = {
+        //Model
+        name: "",
+        email: "",
+        message: "",
 
-    }
+        sendMessage: function() {
+            hmctrl.close();
+        },
+
+    };
 });
 
 /*function ($modalInstance, data) {
