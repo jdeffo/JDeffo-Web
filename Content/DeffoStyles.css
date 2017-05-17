@@ -758,7 +758,7 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 414px) {
+@media only screen and (min-width: 365px) and (max-width: 414px) {
     .IntroWrapper {
         margin-top: -117%;
         height: 420px;
@@ -777,6 +777,49 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
     }
     .IntroTxt h2 {
         font-size: 100%;
+    }
+    .PortfolioWrapper {
+        height: 260px;
+    }
+    .MountWrapper {
+        margin-top: 12%;
+    }
+    .MountTitle {
+        margin-top: -27%;
+    }
+    .PortGit h2 {
+        font-size: 160%;
+    }
+    .JDName {
+        font-size: 185%;
+    }
+    .JDComp {
+        font-size: 185%;
+    }
+    .SuitPic {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 365px) {
+    .IntroWrapper {
+        margin-top: -124%;
+        height: 460px;
+    }
+    .IntroHead {
+        left: 10px;
+        font-size: 215%;
+    }
+    .PortHead {
+        left: 10px;
+        font-size: 215%;
+    }
+    .IntroTxt {
+        font-size: 100%;
+        padding: 5px;
+    }
+    .IntroTxt h2 {
+        font-size: 90%;
     }
     .PortfolioWrapper {
         height: 260px;
