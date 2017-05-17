@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="JDeffoApp">
+<html lang="en">
   <head>
     <title>Jeremy DeFossett</title>
     <link href="Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -12,9 +12,26 @@
 
   </head>
 
-  <body>
+  <body ng-app="JDeffoApp">
 
-  <header ng-include="'Views/NavBar.html'"></header>
+  <!--<header ng-include="'Views/NavBar.html'" ng-controller="HomeController"></header>-->
+  <div class="JDNavWrapper">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="border-style: none;">
+      <div class="container-fluid" style="background-color: #888789;">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="color: black;"><img class="JDLogo" src="Images/JDLogo.png"></a>
+        </div>
+
+        <!--<div class="collapse navbar-collapse" ng-app="JDeffoApp" controller="HomeController">
+          <ul class="nav navbar-nav pull-right JDNavText">
+            <li><a href="#" style="color: black; font-size: 140%;">{{hctrl.controller.testText}}</a></li>
+            <li><a href="#/portfolio" style="color: black; font-size: 140%;">Portfolio</a></li>
+            <li><a href="#" ng-click="$event.preventDefault();hctrl.controller.showContactModal()" style="color: black; font-size: 140%;">Contact</a></li>
+          </ul>
+        </div>-->
+    </div>
+  </div>
+  </div>
 
     <main ng-view></main>
 

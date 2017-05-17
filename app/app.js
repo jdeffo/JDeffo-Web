@@ -31,28 +31,44 @@ JDeffoApp.controller('HomeController', function($uibModal){
         setDisplay: function(element, value) {
             switch (element) {
                 case 'contactModal':
-                    this.openModal(this.htmlTemplates.contactModalTemplate, value);
+                    this.openModal('Views/ContactModal.html', value);
                     break;
             }
         },
 
         openModal: function (template, data) {
-            var uibModalInstance = $uibModal.open({
-                templateUrl: template,
-                size: 'lg',
-                controller: function ($uibModalInstance, data) {
-                    this.data = data;
-                    this.close = function() {
-                        $uibModalInstance.dismiss('cancel');
-                    }
-                },
+            var modalInstance = $uibModal.open({
+                templateUrl: 'Views/ContactModal.html',
+                controller: 'HomeModalController',
                 controllerAs: 'hmctrl',
+                size: 'lg',
                 resolve: {
                     data: function () {
                         return data;
                     }
                 }
-            })
+            });
         },
     };
 });
+
+JDeffoApp.controller('HomeModalController', function($uibModalInstance){
+    var hmctrl = this;
+
+
+    hmctrl.close = function () {
+        $uibModalInstance.dismiss('cancel');
+    };
+
+    hmctrl.sendMessage = function () {
+        this.close();
+
+    }
+});
+
+/*function ($modalInstance, data) {
+    this.data = data;
+    this.close = function() {
+        $uibModalInstance.dismiss('cancel');
+    }
+}*/
