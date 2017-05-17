@@ -100,3 +100,12 @@ Folders/Files added:
   Fixed many align issues
   Version 1 complete
   No Javascript functions currently
+
+5/16/17
+Version 2 complete
+Modal form is working (Besides sending the email)
+    Temporarily removed navigation as it wasn't compatible with ng-click
+Fixed some alignment issues
+Next: php to send email
+May deploy to droplet before doing this
+Git in atom currently acting strange
