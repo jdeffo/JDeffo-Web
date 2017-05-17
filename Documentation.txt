@@ -108,4 +108,13 @@ Modal form is working (Besides sending the email)
 Fixed some alignment issues
 Next: php to send email
 May deploy to droplet before doing this
-Git in atom currently acting strange
+
+
+5/15/17 Later
+Standing up droplet now
+Need to add in mobile resizing
+iphones:
+    6+, 6s+, 7+: 414
+    6, 6s, 7: 375
+    5, 5s: 320
+    4, 4s: 320
