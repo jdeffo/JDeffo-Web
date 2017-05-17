@@ -118,3 +118,9 @@ iphones:
     6, 6s, 7: 375
     5, 5s: 320
     4, 4s: 320
+
+5/17/17
+Mobile Resizing Completion:
+    Computers
+    iPhones: 7+, 7, 6+, 6,
+    Galaxy: S7
