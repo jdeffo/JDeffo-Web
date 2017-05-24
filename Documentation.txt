@@ -124,3 +124,6 @@ Mobile Resizing Completion:
     Computers
     iPhones: 7+, 7, 6+, 6,
     Galaxy: S7
+
+5/23/16
+Starting new branch for css revision, mainly for responsive design
