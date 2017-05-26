@@ -125,5 +125,9 @@ Mobile Resizing Completion:
     iPhones: 7+, 7, 6+, 6,
     Galaxy: S7
 
-5/23/16
+5/23/17
 Starting new branch for css revision, mainly for responsive design
+
+5/25/17
+Made significant progress using background colors with divs to lay everything out
+Still need to add in into text, and then develop for mobile
