@@ -131,3 +131,7 @@ Starting new branch for css revision, mainly for responsive design
 5/25/17
 Made significant progress using background colors with divs to lay everything out
 Still need to add in into text, and then develop for mobile
+
+6/3/2017
+Finished initial refactor of css/html responsive design
+Now need to resize for mobile
