@@ -4,6 +4,7 @@
     <title>Jeremy DeFossett</title>
     <link href="Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/DeffoStyles.css" rel="stylesheet" type="text/css" />
+    <!--<link href="Content/Responsive.css" rel="stylesheet" type="text/css" />-->
     <link rel="shortcut icon" href="Images/JDIcon.ico" />
     <script src="app\lib\angular.min.js"></script>
     <script src="app\lib\angular-route.min.js"></script>
@@ -14,13 +15,7 @@
 
   <body ng-app="JDeffoApp">
 
-  <!--<header ng-include="'Views/NavBar.html'" ng-controller="HomeController"></header>-->
-  <div class="JDNavWrapper">
-    <div class="navbar navbar-inverse navbar-fixed-top" style="border-style: none;">
-      <div class="container-fluid" style="background-color: #888789;">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="color: black;"><img class="JDLogo" src="Images/JDLogo.png"></a>
-        </div>
+  <header ng-include="'Views/NavBar.html'" ng-controller="HomeController"></header>
 
         <!--<div class="collapse navbar-collapse" ng-app="JDeffoApp" controller="HomeController">
           <ul class="nav navbar-nav pull-right JDNavText">
@@ -29,11 +24,8 @@
             <li><a href="#" ng-click="$event.preventDefault();hctrl.controller.showContactModal()" style="color: black; font-size: 140%;">Contact</a></li>
           </ul>
         </div>-->
-    </div>
-  </div>
-  </div>
 
-    <main ng-view></main>
+    <main ng-view style="height: 100%; "></main>
 
     <!--Script-->
     <script src="Content\Bootstrap\js\jquery-3.2.1.min.js"></script>
