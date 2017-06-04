@@ -57,9 +57,11 @@
     width: 74%;
     height: 55%;
     margin-left: 2%;
+    background-color: white;
+    position: relative;
 }
 .IntroTxt p {
-    font-size: 184%;
+    font-size: 1.875vw;
 }
 .QuoteTxt {
     text-align: center;
@@ -67,7 +69,7 @@
     margin-top: 3%;
 }
 .QuoteTxt p {
-    font-size: 200%;
+    font-size: 2vw;
 }
 .resumeButton {
     width: 100%;

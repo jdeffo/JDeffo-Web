@@ -135,3 +135,11 @@ Still need to add in into text, and then develop for mobile
 6/3/2017
 Finished initial refactor of css/html responsive design
 Now need to resize for mobile
+
+To-Do still:
+Mobile resizes
+Large resizes
+Pages:
+    Intro
+    Portfolio
+    Contact
