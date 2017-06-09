@@ -146,3 +146,9 @@ Pages:
 
 6/4/2017
 Setting up Mac
+Set to track upstream
+Set up Mac branch.
+
+6/8/2017
+New changes deployed to server
+Need to look into SASS for mobile dev
