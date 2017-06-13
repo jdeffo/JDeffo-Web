@@ -156,3 +156,6 @@ Need to look into SASS for mobile dev
 6/12/2017
 Changed suit picture to rounded picture in middle of page w/ text below
 Experimenting with safari developer tools
+
+Updated intro section to be responsive
+Portfolio section responsive (need to change layout on mobile)
