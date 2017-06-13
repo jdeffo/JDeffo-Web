@@ -12,10 +12,9 @@
     position: relative;
 }
 .IntroWrapper {
-    height: 82%;
+    height: 90%;
     position: relative;
     padding-top: .5%;
-    padding-bottom: .5%;
 }
 .PortfolioWrapper {
     background: #b5b5ce;
@@ -48,27 +47,31 @@
 }
 .SuitPic{
     margin-left: 2%;
-    height: 55%;
-    width: 20%;
-    float: left;
+    width: 14%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-circle {
+    border-radius: 50%;
 }
 .IntroTxt {
-    float: left;
-    width: 74%;
-    height: 55%;
-    margin-left: 2%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    text-align: center;
 }
 .IntroTxt p {
-    font-size: 1.875vw;
+    font-size: 150%;
 }
 .QuoteTxt {
     text-align: center;
     width: 100%;
-    margin-top: 3%;
+
 }
 .QuoteTxt p {
-    font-size: 2vw;
+    font-size: 140%;
 }
 .resumeButton {
     width: 100%;
