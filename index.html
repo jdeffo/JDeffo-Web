@@ -4,7 +4,7 @@
     <title>Jeremy DeFossett</title>
     <link href="Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/DeffoStyles.css" rel="stylesheet" type="text/css" />
-    <!--<link href="Content/Responsive.css" rel="stylesheet" type="text/css" />-->
+    <link href="Content/Responsive.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="Images/JDIcon.ico" />
     <script src="app\lib\angular.min.js"></script>
     <script src="app\lib\angular-route.min.js"></script>
@@ -16,14 +16,6 @@
   <body ng-app="JDeffoApp">
 
   <header ng-include="'Views/NavBar.html'" ng-controller="HomeController"></header>
-
-        <!--<div class="collapse navbar-collapse" ng-app="JDeffoApp" controller="HomeController">
-          <ul class="nav navbar-nav pull-right JDNavText">
-            <li><a href="#" style="color: black; font-size: 140%;">{{hctrl.controller.testText}}</a></li>
-            <li><a href="#/portfolio" style="color: black; font-size: 140%;">Portfolio</a></li>
-            <li><a href="#" ng-click="$event.preventDefault();hctrl.controller.showContactModal()" style="color: black; font-size: 140%;">Contact</a></li>
-          </ul>
-        </div>-->
 
     <main ng-view style="height: 100%; "></main>
 
