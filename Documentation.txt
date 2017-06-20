@@ -164,5 +164,8 @@ Portfolio section responsive (need to change layout on mobile)
 Deployed new changes
 Mobile response changes needed:
   -Mountain scaled down
-  possible portfolio stack
-  contact stack
+  -possible portfolio stack
+  -contact stack
+
+6/18/2017
+Responsive on mobile now, iPhone 7+ screen and under

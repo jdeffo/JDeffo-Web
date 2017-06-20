@@ -17,19 +17,21 @@
 }
 .PortfolioWrapper {
     background: #b5b5ce;
-    /*height: 72%;*/
     position: relative;
     padding-top: .5%;
     padding-bottom: .5%;
 }
 .ContactWrapper {
-    height: 70%;
     position: relative;
     padding-top: .5%;
     padding-bottom: .5%;
 }
-
+.indent {
+    margin-left: 2%;
+}
 /*--Content--*/
+
+/*Mountain Stock Photo*/
 .MountTitle{
     position: absolute;
     bottom: 0;
@@ -40,10 +42,7 @@
     width: 100%;
     height: 100%;
 }
-
-.IntroHead{
-    margin-left: 2%;
-}
+/*Intro Secction*/
 .SuitPic{
     width: 14%;
     margin-left: auto;
@@ -51,6 +50,7 @@
 }
 .img-circle {
     border-radius: 50%;
+    width: 100%;
 }
 .IntroTxt {
     width: 98%;
@@ -75,9 +75,7 @@
     padding-top: 0;
     text-align: center;
 }
-.JDResumeButton {
-
-}
+/*Portfolio Section*/
 .PortSamp1 {
     width:30%;
     margin-left: 2.5%;
@@ -104,41 +102,29 @@
 .PortGitTxt h2 {
     bottom: 0;
 }
-
+/*Contact Section*/
 .ContactLinkedin{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
 }
 .ContactGit{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
     text-align: center;
 }
 .ContactEmail{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
     text-align: center;
 }
-.HeathTxt {
-    width: 100%;
-    white-space: nowrap;
-}
-.HeathTxt h2 {
-    position: absolute;
-    bottom: 0;
-    margin-left: 50%;
-    -ms-transform: translate(-50%); /* IE 9 */
-    -webkit-transform: translate(-50%); /* Safari */
-    transform: translate(-50%);
-}
+/*~~~HTML Elements~~~*/
 
-
+footer {
+  text-align: center;
+}
 html,body{
     height:100%;
     padding-top: 25px;
@@ -146,8 +132,6 @@ html,body{
     background-color: #cecece;
     margin: 0;
 }
-
-
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     display: none;
-}
+}*/

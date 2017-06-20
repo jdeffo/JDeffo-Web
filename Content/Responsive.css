@@ -1,1 +1,11 @@
 /*Responsive Queries*/
+
+/*iPhone 7+ screen and under*/
+@media only screen and (min-width: 0px) and (max-width: 414px) {
+    .MountWrapper {
+      height: 30%;
+    }
+    .PortGitTxt {
+      white-space: normal;å
+    }
+}
