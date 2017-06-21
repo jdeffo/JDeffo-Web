@@ -10,22 +10,22 @@ JDeffoApp.config(['$routeProvider', function($routeProvider){
         })
         .when('/about', {
           templateUrl: 'Views/About.html',
-          controller: 'AboutController',
-          caseInsensitiveMatch: true
+          //controller: 'AboutController',
+          caseInsensitiveMatch: true,
         })
         .when('/contact', {
           templateUrl: 'Views/Contact.html',
-          controller: 'ContactController',
-          caseInsensitiveMatch: true
+          //controller: 'ContactController',
+          caseInsensitiveMatch: true,
         })
         .when('/portfolio', {
           templateUrl: 'Views/Portfolio.html',
-          controller: 'PortfolioControler',
-          caseInsensitiveMatch: true
+          //controller: 'PortfolioControler',
+          caseInsensitiveMatch: true,
         })
         .otherwise({
           redirectTo: '/home'
-        });
+        })
 }]);
 
 JDeffoApp.controller('HomeController', function($uibModal){

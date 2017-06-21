@@ -169,3 +169,7 @@ Mobile response changes needed:
 
 6/18/2017
 Responsive on mobile now, iPhone 7+ screen and under
+
+6/20/2017
+Fixed the mountain scaling problem on mobile response
+Stacked Contact section
