@@ -7,11 +7,13 @@ JDeffoApp.config(['$routeProvider', function($routeProvider){
             templateUrl: 'Views/Home.html',
             controller: 'HomeController',
             controllerAs: 'hctrl',
+            caseInsensitiveMatch: true,
         })
         .when('/about', {
-          templateUrl: 'Views/About.html',
-          //controller: 'AboutController',
-          caseInsensitiveMatch: true,
+            templateUrl: 'Views/About.html',
+            controller: 'HomeController',
+            controllerAs: 'hctrl',
+            caseInsensitiveMatch: true,
         })
         .when('/contact', {
           templateUrl: 'Views/Contact.html',
