@@ -120,6 +120,17 @@
     float: left;
     text-align: center;
 }
+/*~~~Portfolio Page~~~*/
+.ProjectsContainer {
+  text-align: center;
+}
+.ProjWrap {
+  width:30%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  float: left;
+  text-align: center;
+}
 
 /*~~~Contact Page~~~*/
 .ContactInfo {
