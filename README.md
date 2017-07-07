@@ -13,7 +13,7 @@ IDE USED: ATOM
 
 ## Versioning
 
-#### Current Version:V2
+#### Current Version: V2
 Past versions can be found in the [Depricated Folder](https://github.com/jdeffo/JDeffo-Web/tree/master/Depricated)
 
 ## Authors
@@ -22,4 +22,4 @@ Past versions can be found in the [Depricated Folder](https://github.com/jdeffo/
 
 ## Acknowledgments
 
-Heath Bauman -- Graphic designer and friend that mocked up the website in photoshop
+Heath Bauman -- (https://www.linkedin.com/in/heathbauman/) Graphic designer and friend that mocked up the website in photoshop
