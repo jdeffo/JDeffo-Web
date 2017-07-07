@@ -1,8 +1,8 @@
-#JDeffo-Web
+# JDeffo-Web
 
 My portfolio web-site: A place for visiters to get to know me, download my resume, view my Github personal projects, contact me, and read anything I decide to blog about.  
 
-##Built With
+## Built With
 
 HTML
 CSS
@@ -11,10 +11,10 @@ AngularJS - For single page application and routing
 
 IDE USED: ATOM
 
-##Authors
+## Authors
 
 Jeremy DeFossett
 
-##Acknowledgments
+## Acknowledgments
 
 Heath Bauman -- Graphic designer and friend that mocked up the website in photoshop
