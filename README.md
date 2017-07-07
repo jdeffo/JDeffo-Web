@@ -4,10 +4,10 @@ My portfolio web-site: A place for visiters to get to know me, download my resum
 
 ## Built With
 
-HTML
-CSS
-JavaScript
-AngularJS - For single page application and routing
+* HTML
+* CSS
+* JavaScript
+* AngularJS - For single page application and routing
 
 IDE USED: ATOM
 
