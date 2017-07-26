@@ -76,19 +76,7 @@
     text-align: center;
 }
 /*Portfolio Section*/
-.PortSamp1 {
-    width:30%;
-    margin-left: 2.5%;
-    float: left;
-    text-align: center;
-}
-.PortSamp2 {
-    width:30%;
-    margin-left: 2.5%;
-    float: left;
-    text-align: center;
-}
-.PortSamp3{
+.PortSamp {
     width:30%;
     margin-left: 2.5%;
     float: left;
