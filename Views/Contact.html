@@ -11,10 +11,13 @@
 <div class="ContactForm">
   <hr />
   <h2>Send Me a Message</h2>
-  <form name="contactForm" ng-submit="hmctrl.contact.sendMessage()" novalidate class="form-group">
-      <input type="text" placeholder="Name" name="name" class="form-control" ng-model="hmctrl.contact.name" ng-required="true"/><br>
-      <input type ="email" placeholder="Email" name="email" class="form-control" ng-model="hmctrl.contact.email" ng-required="true"/><br>
-      <textarea placeholder="Your Message" name="message" class="form-control" ng-model="hmctrl.contact.message" ng-required="true"></textarea><br>
-      <input type="submit" value="Send" class="btn btn-primary pull-right" ng-disabled="contactForm.$invalid"/>
+  <form name="contactForm" ng-submit="cctrl.controller.sendMessage()" novalidate class="form-group">
+      <input type="text" placeholder="Name" name="name" class="form-control" ng-model="cctrl.model.contact.name" ng-required="true"/><br>
+      <input type ="email" placeholder="Email" name="email" class="form-control" ng-model="cctrl.model.contact.email" ng-required="true"/><br>
+      <textarea placeholder="Your Message" name="message" class="form-control" ng-model="cctrl.model.contact.message" ng-required="true"></textarea><br>
+      <input type="submit" value="Send" class="btn btn-primary" />
+      <!--ng-disabled="contactForm.$invalid"-->
   </form>
+
+  {{cctrl.model.contact.result}}
 </div>

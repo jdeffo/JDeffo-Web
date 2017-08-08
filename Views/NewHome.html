@@ -1,0 +1,37 @@
+<!--Port Side-->
+<div class="leftPane">
+
+    <div class="portfolioPicture">
+        <img class="img-circle" src="Images/SuitPort.jpg">
+    </div>
+
+    <div class="navSection">
+        <ul>
+            <li><a href ng-click="hctrl.controller.togglePane('intro')">About</a></li>
+            <li><a href ng-click="hctrl.controller.togglePane('portfolio')">Porfolio</a></li>
+            <li><a href ng-click="hctrl.controller.togglePane('contact')">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="socialMediaSection">
+        <div class="links">
+            <a href="https://github.com/jdeffo/">github</a>
+            <a href="https://linkedin.com/in/jdefossett/">Linkedin</a>
+            <a href="mailto:jdefossett@gmail.com">email</a>
+        </div>
+    </div>
+
+</div>
+
+<!--Navigation side-->
+<div class="introPane" ng-show="hctrl.controller.showIntroPane">
+
+</div>
+<div class="portfolioPane" ng-show="hctrl.controller.showPortfolioPane">
+
+</div>
+<div class="contactPane" ng-show="hctrl.controller.showContactPane">
+
+</div>
+
+<div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>

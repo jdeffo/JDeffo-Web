@@ -9,6 +9,12 @@ JDeffoApp.config(['$routeProvider', function($routeProvider){
             controllerAs: 'hctrl',
             caseInsensitiveMatch: true,
         })
+        .when('/home2', {
+            templateUrl: 'Views/NewHome.html',
+            controller: 'HomeController',
+            controllerAs: 'hctrl',
+            caseInsensitiveMatch: true,
+        })
         .when('/about', {
             templateUrl: 'Views/About.html',
             controller: 'HomeController',
@@ -17,7 +23,8 @@ JDeffoApp.config(['$routeProvider', function($routeProvider){
         })
         .when('/contact', {
           templateUrl: 'Views/Contact.html',
-          //controller: 'ContactController',
+          controller: 'ContactController',
+          controllerAs: 'cctrl',
           caseInsensitiveMatch: true,
         })
         .when('/portfolio', {
@@ -36,7 +43,27 @@ JDeffoApp.controller('HomeController', function($uibModal){
 
     vm.controller = {
 
-        testText: "This is a test",
+        showIntroPane: true,
+        showPortfolioPane: false,
+        showContactPane: false,
+
+        togglePane: function(select) {
+            if(select == "intro") {
+                this.showIntroPane = true;
+                this.showPortfolioPane = false;
+                this.showContactPane = false;
+            }
+            else if(select == "portfolio") {
+                this.showIntroPane = false;
+                this.showPortfolioPane = true;
+                this.showContactPane = false;
+            }
+            else if(select == "contact") {
+                this.showIntroPane = false;
+                this.showPortfolioPane = false;
+                this.showContactPane = true;
+            }
+        },
 
         showContactModal: function() {
             this.setDisplay('contactModal', true);
@@ -133,6 +160,52 @@ JDeffoApp.controller('PortfolioController', function($uibModal){
     };
 });
 
+JDeffoApp.controller('ContactController', function($http){
+    var cm = this;
+
+    cm.controller = {
+
+        sendMessage: function() {
+            name = cm.model.contact.name;
+            email = cm.model.contact.email;
+            message = cm.model.contact.message;
+            input = {name: name, email: email, message: message};
+
+            $http({
+                method: 'POST',
+                url: '/sendEmail',
+                data: input,
+            }).then(function(response) {
+                cm.model.contact.result = "call success";
+
+            }, function(error) {
+                console.log(error);
+            });
+        },
+    };
+
+    cm.model = {
+        contact: {
+            name: "",
+            email: "",
+            message: "",
+            result: "",
+        },
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 JDeffoApp.controller('HomeModalController', function($uibModalInstance){
     var hmctrl = this;
 
@@ -140,16 +213,30 @@ JDeffoApp.controller('HomeModalController', function($uibModalInstance){
         $uibModalInstance.dismiss('cancel');
     };
 
-    hmctrl.contact = {
-        //Model
-        name: "",
-        email: "",
-        message: "",
+    hmctrl.sendMessage = function() {
+        hmctrl.model.contact.name = "call success";
+        name = hmctrl.model.contact.name;
+        email = hmctrl.model.contact.email;
+        message = hmctrl.model.contact.message;
 
-        sendMessage: function() {
-            hmctrl.close();
+        hmctrl.model.contact.result = "call success";
+        input = {name: name, email: email, message: message};
+
+        /*$.ajax({
+            type: "POST",
+            url: "~/Scripts/composeEmail",
+            data: { param: input}
+        }).done(function( o ) {
+            // do something
+        });*/
+    };
+    hmctrl.model = {
+        contact: {
+            name: "",
+            email: "",
+            message: "",
+            result: "Working?",
         },
-
     };
 });
 
