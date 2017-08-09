@@ -1,6 +1,5 @@
 var JDeffoApp = angular.module('JDeffoApp', ['ngRoute', 'ui.bootstrap']);
 
-//JDeffoApp.config(['$routeProvider', function($routeProvider, $locationProvider){
 JDeffoApp.config(function ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/home', {
@@ -9,7 +8,7 @@ JDeffoApp.config(function ($routeProvider, $locationProvider) {
         controller: 'HomeController',
         controllerAs: 'hctrl',
     })
-    /*.when('/about', {
+    .when('/about', {
       templateUrl: 'Views/About.html',
       controller: 'AboutController',
       caseInsensitiveMatch: true
@@ -24,11 +23,6 @@ JDeffoApp.config(function ($routeProvider, $locationProvider) {
       controller: 'PortfolioControler',
       caseInsensitiveMatch: true
     })
-    .when('/resume', {
-      templateUrl: 'Views/Resume.html',
-      controller: 'ResumeController',
-      caseInsensitiveMatch: true
-    })*/
     .otherwise({
       redirectTo: '/home'
     });

@@ -12,26 +12,26 @@
     position: relative;
 }
 .IntroWrapper {
-    height: 82%;
     position: relative;
     padding-top: .5%;
-    padding-bottom: .5%;
 }
 .PortfolioWrapper {
     background: #b5b5ce;
-    height: 72%;
     position: relative;
     padding-top: .5%;
     padding-bottom: .5%;
 }
 .ContactWrapper {
-    height: 70%;
     position: relative;
     padding-top: .5%;
     padding-bottom: .5%;
 }
-
+.indent {
+    margin-left: 2%;
+}
 /*--Content--*/
+
+/*Mountain Stock Photo*/
 .MountTitle{
     position: absolute;
     bottom: 0;
@@ -42,66 +42,42 @@
     width: 100%;
     height: 100%;
 }
-
-.IntroHead{
-    margin-left: 2%;
-}
+/*Intro Secction*/
 .SuitPic{
-    margin-left: 2%;
-    height: 55%;
-    width: 20%;
-    float: left;
+    width: 14%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
 }
 .IntroTxt {
-    float: left;
-    width: 74%;
-    height: 55%;
-    margin-left: 2%;
-    background-color: white;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    text-align: center;
 }
 .IntroTxt p {
-    font-size: 1.875vw;
+    font-size: 150%;
 }
 .QuoteTxt {
     text-align: center;
     width: 100%;
-    margin-top: 3%;
 }
 .QuoteTxt p {
-    font-size: 2vw;
+    font-size: 140%;
 }
 .resumeButton {
     width: 100%;
     height: 10%;
-    bottom: 0;
     padding-top: 0;
-    position: absolute;
     text-align: center;
 }
-.JDResumeButton {
-
-}
-.PortSamp1 {
-    background-color: white;
+/*Portfolio Section*/
+.PortSamp {
     width:30%;
-    height: 58%;
-    margin-left: 2.5%;
-    float: left;
-    text-align: center;
-}
-.PortSamp2 {
-    background-color: white;
-    width:30%;
-    height: 58%;
-    margin-left: 2.5%;
-    float: left;
-    text-align: center;
-}
-.PortSamp3{
-    background-color: white;
-    width:30%;
-    height: 58%;
     margin-left: 2.5%;
     float: left;
     text-align: center;
@@ -109,50 +85,75 @@
 .PortGitTxt {
     width: 100%;
     white-space: nowrap;
+    text-align: center;
 }
 .PortGitTxt h2 {
-    position: absolute;
     bottom: 0;
-    margin-left: 50%;
-    -ms-transform: translate(-50%); /* IE 9 */
-    -webkit-transform: translate(-50%); /* Safari */
-    transform: translate(-50%);
 }
-
+/*Contact Section*/
 .ContactLinkedin{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
 }
 .ContactGit{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
     text-align: center;
 }
 .ContactEmail{
-    width:30%;
-    height: 60%;
-    margin-left: 2.5%;
+    width:15%;
+    margin-left: 13.75%;
     float: left;
     text-align: center;
 }
-.HeathTxt {
-    width: 100%;
-    white-space: nowrap;
+/*~~~About Page~~~*/
+.IntroPageText {
+  width: 75%;
+  text-align: center;
+  font-size: 150%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
 }
-.HeathTxt h2 {
-    position: absolute;
-    bottom: 0;
-    margin-left: 50%;
-    -ms-transform: translate(-50%); /* IE 9 */
-    -webkit-transform: translate(-50%); /* Safari */
-    transform: translate(-50%);
+.IntroPageResume {
+  text-align: center;
+}
+/*~~~Portfolio Page~~~*/
+.ProjectsContainer {
+  text-align: center;
+  position: relative;
+}
+.ProjWrap {
+  width:30%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  float: left;
+  text-align: center;
 }
 
+/*~~~Contact Page~~~*/
+.ContactInfo {
+  text-align: center;
+}
+.ContactInfo p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ContactForm {
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/*~~~HTML Elements~~~*/
+
+footer {
+  text-align: center;
+}
 html,body{
     height:100%;
     padding-top: 25px;
@@ -160,8 +161,6 @@ html,body{
     background-color: #cecece;
     margin: 0;
 }
-
-
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     display: none;
-}
+}*/

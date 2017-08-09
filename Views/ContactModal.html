@@ -16,13 +16,13 @@
       </div>
       <div class="modal-body contactModal" style="overflow: auto;">
 
-          <form name="contactForm" ng-submit="hmctrl.contact.sendMessage()" novalidate class="form-group">
-              <input type="text" placeholder="Name" name="name" class="form-control" ng-model="hmctrl.contact.name" ng-required="true"/><br>
-              <input type ="email" placeholder="Email" name="email" class="form-control" ng-model="hmctrl.contact.email" ng-required="true"/><br>
-              <textarea placeholder="Your Message" name="message" class="form-control" ng-model="hmctrl.contact.message" ng-required="true"></textarea><br>
+          <form name="contactForm" ng-submit="hmctrl.sendMessage()" novalidate class="form-group">
+              <input type="text" placeholder="Name" name="name" class="form-control" ng-model="hmctrl.model.contact.name" ng-required="true"/><br>
+              <input type ="email" placeholder="Email" name="email" class="form-control" ng-model="hmctrl.model.contact.email" ng-required="true"/><br>
+              <textarea placeholder="Your Message" name="message" class="form-control" ng-model="hmctrl.model.contact.message" ng-required="true"></textarea><br>
               <input type="submit" value="Send" class="btn btn-primary pull-right" ng-disabled="contactForm.$invalid"/>
           </form>
-
+        {{hmctrl.model.contact.name}}
       </div>
       <div class="modal-footer">
           <button class="btn btn-primary" type="button" ng-click="hmctrl.close()">Close</button>

@@ -1,0 +1,23 @@
+<div class="ContactInfo">
+  <h2>Contact Information</h2>
+    <p>LinkedIn: linkedin.com/in/jdefossett</p>
+    <p>GitHub: Github.com/jdeffo</p>
+    <p>School Email: jdefosse@indiana.edu</p>
+    <p>Personal Email: jdefossett@gmail.com</p>
+    <p>Work Email: jdefossett1@humana.com</p>
+
+</div>
+
+<div class="ContactForm">
+  <hr />
+  <h2>Send Me a Message</h2>
+  <form name="contactForm" ng-submit="cctrl.controller.sendMessage()" novalidate class="form-group">
+      <input type="text" placeholder="Name" name="name" class="form-control" ng-model="cctrl.model.contact.name" ng-required="true"/><br>
+      <input type ="email" placeholder="Email" name="email" class="form-control" ng-model="cctrl.model.contact.email" ng-required="true"/><br>
+      <textarea placeholder="Your Message" name="message" class="form-control" ng-model="cctrl.model.contact.message" ng-required="true"></textarea><br>
+      <input type="submit" value="Send" class="btn btn-primary" />
+      <!--ng-disabled="contactForm.$invalid"-->
+  </form>
+
+  {{cctrl.model.contact.result}}
+</div>

@@ -147,3 +147,34 @@ Pages:
 6/4/2017
 Setting up Mac
 Set to track upstream
+Set up Mac branch.
+
+6/8/2017
+New changes deployed to server
+Need to look into SASS for mobile dev
+
+6/12/2017
+Changed suit picture to rounded picture in middle of page w/ text below
+Experimenting with safari developer tools
+
+Updated intro section to be responsive
+Portfolio section responsive (need to change layout on mobile)
+
+6/15/2017
+Deployed new changes
+Mobile response changes needed:
+  -Mountain scaled down
+  -possible portfolio stack
+  -contact stack
+
+6/18/2017
+Responsive on mobile now, iPhone 7+ screen and under
+
+6/20/2017
+Fixed the mountain scaling problem on mobile response
+Stacked Contact section
+
+7/25/2017
+Behind on documenting, will update all changes later
+Today: updated Portfolio page to pull displayed projects from an angular Model
+using ng-repeat
