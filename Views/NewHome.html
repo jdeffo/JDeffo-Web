@@ -7,17 +7,32 @@
 
     <div class="navSection">
         <ul>
-            <li><a href ng-click="hctrl.controller.togglePane('intro')">About</a></li>
-            <li><a href ng-click="hctrl.controller.togglePane('portfolio')">Porfolio</a></li>
-            <li><a href ng-click="hctrl.controller.togglePane('contact')">Contact</a></li>
+            <li>
+                <a class="navLink" href ng-click="hctrl.controller.togglePane('intro')" ng-hide="hctrl.controller.showIntroPane" >About</a>
+                <a href ng-click="hctrl.controller.togglePane('intro')" style="text-decoration: underline;" ng-show="hctrl.controller.showIntroPane"><b>About</b></a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('portfolio')" ng-hide="hctrl.controller.showPortfolioPane">Portfolio</a>
+                <a href ng-click="hctrl.controller.togglePane('portfolio')" style="text-decoration: underline;" ng-show="hctrl.controller.showPortfolioPane"><b>Portfolio</b></a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('contact')" ng-hide="hctrl.controller.showContactPane">Contact</a>
+                <a href ng-click="hctrl.controller.togglePane('contact')" style="text-decoration: underline;" ng-show="hctrl.controller.showContactPane"><b>Contact</b></a>
+            </li>
         </ul>
     </div>
 
     <div class="socialMediaSection">
         <div class="links">
-            <a href="https://github.com/jdeffo/">github</a>
-            <a href="https://linkedin.com/in/jdefossett/">Linkedin</a>
-            <a href="mailto:jdefossett@gmail.com">email</a>
+            <a href="https://github.com/jdeffo/" style="margin-right: 8%;">
+                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/jdefossett/">
+                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:jdefossett@gmail.com" style="margin-left: 8%;">
+                <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 
