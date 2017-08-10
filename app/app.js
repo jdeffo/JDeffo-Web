@@ -42,6 +42,61 @@ JDeffoApp.controller('HomeController', function($uibModal){
     var vm = this;
 
     vm.controller = {
+        cardList: [
+            //Web
+            {
+                title: "JDeffo-Web",
+                link: "https://github.com/jdeffo/JDeffo-Web",
+                image: "Images/stockCode2.jpeg",
+            },
+            {
+                title: 'To-Do-List',
+                link: 'https://github.com/jdeffo/To-Do-List',
+                image: 'Images/stockCode1.jpeg',
+            },
+            //Machine Learning
+            {
+                title: 'Machine Learning',
+                link: 'https://github.com/jdeffo/Machine-Learning',
+                image: 'Images/stockCode3.jpeg',
+            },
+            //Various Scripts
+            {
+                title: 'Various Scripts',
+                link: 'https://github.com/jdeffo/Various-Scripts',
+                image: 'Images/stockCode2.jpeg',
+            },
+            //To-Do-List
+            {
+                title: 'To-Do-List',
+                link: 'https://github.com/jdeffo/To-Do-List',
+                image: 'Images/stockCode1.jpeg',
+            },
+            //deffoStocks
+            {
+                title: 'deffoStocks',
+                link: 'https://github.com/jdeffo/deffo-stocks',
+                image: 'Images/stockCode3.jpeg',
+            },
+            //GTD
+            /*{
+                title: 'GTD',
+                link: 'https://github.com/jdeffo/gtd',
+                image: 'Images/stockCode1.jpeg',
+            },*/
+            //Password Manager
+            /*{
+                title: 'Password Manager',
+                link: 'https://github.com/jdeffo/passwordmanager',
+                image: 'Images/stockCode2.jpeg',
+            },*/
+            //Reverse-Shell-And-Key-logger
+            /*{
+                title: 'Reverse Shell/Key Logger',
+                link: 'https://github.com/jdeffo/Reverse-Shell-And-Key-logger',
+                image: 'Images/stockCode2.jpeg',
+            },*/
+        ],
 
         showIntroPane: true,
         showPortfolioPane: false,
