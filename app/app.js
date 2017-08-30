@@ -99,22 +99,32 @@ JDeffoApp.controller('HomeController', function($uibModal){
         ],
 
         showIntroPane: true,
+        showSkillsPane: false,
         showPortfolioPane: false,
         showContactPane: false,
 
         togglePane: function(select) {
             if(select == "intro") {
                 this.showIntroPane = true;
+                this.showSkillsPane = false;
+                this.showPortfolioPane = false;
+                this.showContactPane = false;
+            }
+            else if(select == "skills") {
+                this.showIntroPane = false;
+                this.showSkillsPane = true;
                 this.showPortfolioPane = false;
                 this.showContactPane = false;
             }
             else if(select == "portfolio") {
                 this.showIntroPane = false;
+                this.showSkillsPane = false;
                 this.showPortfolioPane = true;
                 this.showContactPane = false;
             }
             else if(select == "contact") {
                 this.showIntroPane = false;
+                this.showSkillsPane = false;
                 this.showPortfolioPane = false;
                 this.showContactPane = true;
             }
