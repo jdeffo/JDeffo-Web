@@ -142,17 +142,21 @@ a:active {
 
 
 .portfolioPane {
-    background-color: #7f8c8d;
+    background-color: white;
     width: 80%;
     height: 100%;
     float: left;
     position: relative;
     text-align: center;
 }
+.portfolioPane h1 {
+    font-size: 500%;
+    margin-top: 3%;
+}
 .projWrap {
   width:30%;
   margin-left: 2.5%;
-  margin-top: 1%;
+  margin-top: 0%;
   float: left;
   text-align: center;
 }
