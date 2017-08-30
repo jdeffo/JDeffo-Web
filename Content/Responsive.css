@@ -1,38 +1,22 @@
-/*Responsive Queries*/
-
-/*iPhone 7+ screen and under*/
+/*iPhone 7+ and under*/
 @media only screen and (min-width: 0px) and (max-width: 800px) {
-    .MountWrapper {
-      width:100%;
-      height:35%;
-      position: relative;
-    }
-    .MountPic {
+    .leftPane {
         width: 100%;
-        height: 100%;
     }
-    .PortGitTxt {
-      white-space: normal;
+    .introPane {
+        width: 100%;
+        height: auto;
     }
-    /*Contact Section*/
-    .ContactLinkedin{
-        width:45%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
+    .skillsPane {
+        width: 100%;
+        height: auto;
     }
-    .ContactGit{
-      width:45%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3%;
-      float: none;
+    .portfolioPane {
+        width: 100%;
+        height: auto;
     }
-    .ContactEmail{
-      width:45%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3%;
-      float: none;
+    .contactPane {
+        width: 100%;
+        height: auto;
     }
 }

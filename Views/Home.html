@@ -1,87 +1,138 @@
-<!--Mount Wrapepr-->
-<div class="MountWrapper">
-    <img class="MountPic" src="Images/snowMountFullRes.jpg">
-    <div class="MountTitle">
-        <h1 class="JDName">Jeremy DeFossett</h1>
-        <h2 class="JDComp">Developer</h2>
-    </div>
-</div>
-<!--Intro Wrapper-->
-<div class="IntroWrapper">
-    <div class="SuitPic">
-        <img class="img-circle" src="Images/SuitPort.jpg">
+<!--Navigation Side-->
+<div class="leftPane">
+
+    <div class="titleSection">
+        <img class="deffoLogo" src="Images/deffoLogo.png">
+        <h3 style="float: left;">Jeremy DeFossett</h3>
+        <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
     </div>
 
-    <div class="IntroTxt">
-        <p>Why-How-What.  Simon Sinek stated that great leaders start with why, rather than what.  Why am I here?  I want to empower people with great technologies
-        in order for them to achieve their goals and desires.  How do I accomplish this?  By working to the best of my ability, constantly learn new technologies, and
-        bettering myself on a daily basis.  So what do I do?  I'm a developer.  I attend Indiana University pursuing a bachelors degree in Computer Science, a certificate
-        in Informatics, and a minor in business.  I don't plan on stopping there, however.  After graduating, I will be working to earn my Masters in Information Systems,
-        and later down the road my Masters in Business Administration.  I want to continue to work my way up, as I do not believe in complacency, while giving back to
+    <div class="navSection">
+        <ul>
+            <li>
+                <a class="navLink" href ng-click="hctrl.controller.togglePane('intro')"
+                ng-hide="hctrl.controller.showIntroPane" >About</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showIntroPane"><b>About</b></a>
+            </li>
+            <li>
+                <a class="navLink" href ng-click="hctrl.controller.togglePane('skills')"
+                ng-hide="hctrl.controller.showSkillsPane" >Skills</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showSkillsPane"><b>Skills</b></a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('portfolio')"
+                ng-hide="hctrl.controller.showPortfolioPane">Portfolio</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showPortfolioPane"><b>Portfolio</b></a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('contact')"
+                ng-hide="hctrl.controller.showContactPane">Contact</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showContactPane"><b>Contact</b></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="socialMediaSection">
+        <div class="links">
+            <a href="https://github.com/jdeffo/" style="margin-right: 8%;">
+                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/jdefossett/">
+                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:jdefossett@gmail.com" style="margin-left: 8%;">
+                <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!--Content side-->
+<div class="introPane" ng-show="hctrl.controller.showIntroPane">
+
+    <div class="introTitle">
+        <h1>Why</h1>
+        <h3>What</h3>
+        <h2>How</h2>
+        <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
+    </div>
+    <div class="introTxt">
+        <p>Simon Sinek stated that great leaders start with why, rather than what.
+            Why am I here?  I want to empower people with great technologies
+        in order for them to achieve their goals and desires.  How do I accomplish this?
+        By working to the best of my ability, constantly learn new technologies, and
+        bettering myself on a daily basis.  So what do I do?  I'm a developer.
+        I attend Indiana University pursuing a bachelors degree in Computer Science, a certificate
+        in Informatics, and a minor in business.  I don't plan on stopping there, however.
+        After graduating, I will be working to earn my Masters in Information Systems,
+        and later down the road my Masters in Business Administration.  I want to continue to
+        work my way up, as I do not believe in complacency, while giving back to
         those around me.</p>
     </div>
 
-    <div class="QuoteTxt">
-        <p>"When you want to succeed, as bad as you want to breathe, then you'll be successful"</p>
+    <div class="quoteTxt">
+        <h3>"When you want to succeed, as bad as you want to breathe, then you'll be successful"</h3>
     </div>
 
-    <div class="resumeButton">
-        <a href="../Downloadables/Resume-DeFossett.pdf" download="Resume-DeFossett.pdf"><button type="button" class="btn btn-primary btn-lg JDResumeButton">Résumé</button></a>
-    </div>
+    <!--<div class="resume">
+        <a href="../Downloadables/Resume-DeFossett.pdf"
+        download="Resume-DeFossett.pdf"><button type="button" class="resumeButton">Résumé</button></a>
+    </div>-->
 
 </div>
-<!--Portfolio Wrapper-->
-<div class="PortfolioWrapper">
-    <h1 class="indent">Portfolio</h1>
+<div class="skillsPane" ng-show="hctrl.controller.showSkillsPane">
+</div>
+<div class="portfolioPane" ng-show="hctrl.controller.showPortfolioPane">
 
-    <div class="PortSamp">
-        <a href="https://github.com/jdeffo/JDeffo-Web">
-            <img style="width: 100%;" src="Images/stockCode1.jpeg">
+    <h1>Portfolio</h1>
+
+    <div class="projWrap" ng-repeat="card in hctrl.controller.cardList">
+        <a href="{{card.link}}">
+            <img style="width: 100%;" src="{{card.image}}">
         </a>
-        <h3>deffoWeb</h3>
+        <h3>{{card.title}}</h3>
     </div>
 
-    <div class="PortSamp">
-        <a href="https://github.com/jdeffo/deffoStocks">
-            <img style="width: 100%;" src="Images/stockCode2.jpeg">
-        </a>
-        <h3>deffoStocks</h3>
-    </div>
 
-    <div class="PortSamp">
-        <a href="https://github.com/jdeffo/To-Do-List">
-            <img style="width: 100%;" src="Images/stockCode3.jpeg">
-        </a>
-        <h3>To-Do</h3>
-    </div>
     <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
 
-    <div class="PortGitTxt">
-        <h2>The rest of my projects can be viewed on <a href="https://github.com/jdeffo">github.com/jdeffo</a></h2>
+</div>
+
+
+<div class="contactPane" ng-show="hctrl.controller.showContactPane">
+
+    <div class="contactInfo">
+      <h2>Contact Information</h2>
+        <p><span class="underline">LinkedIn:</span> linkedin.com/in/jdefossett</p>
+        <p><span class="underline">GitHub:</span> Github.com/jdeffo</p>
+        <p><span class="underline">School Email:</span> jdefosse@indiana.edu</p>
+        <p><span class="underline">Personal Email:</span> jdefossett@gmail.com</p>
+        <p><span class="underline">Work Email:</span> jdefossett1@humana.com</p>
+
+    </div>
+
+    <div class="contactForm">
+      <hr />
+      <h2>Send Me a Message</h2>
+      <form name="contactForm" ng-submit="cctrl.controller.sendMessage()" novalidate class="form-group">
+          <input type="text" placeholder="Name" name="name" class="form-control"
+          ng-model="cctrl.model.contact.name" ng-required="true"/><br>
+          <input type ="email" placeholder="Email" name="email" class="form-control"
+          ng-model="cctrl.model.contact.email" ng-required="true"/><br>
+          <textarea placeholder="Your Message" name="message" class="form-control"
+          ng-model="cctrl.model.contact.message" ng-required="true"></textarea><br>
+          <input type="submit" value="Send" class="resumeButton" style="width: 13%;"/>
+          <!--ng-disabled="contactForm.$invalid"-->
+      </form>
+
+      {{cctrl.model.contact.result}}
     </div>
 
 </div>
-<!--Contact Wrapper-->
-<div class="ContactWrapper">
-    <h1 class="indent">Contact</h1>
 
-    <div class="ContactLinkedin">
-        <a href="https://linkedin.com/in/jdefossett">
-          <img style="width: 100%; height: 65%;" src="Images/JDLinked.png"></a>
-    </div>
-
-    <div class="ContactGit">
-        <a href="https://github.com/jdeffo">
-          <img style="width: 75%; height: 60%;" src="Images/JDGithub.png"></a>
-    </div>
-
-    <div class="ContactEmail">
-        <a href ng-click="hctrl.controller.showContactModal()">
-          <img style="width: 75%; height: 60%;" src="Images/JDEmail.png"></a>
-    </div>
 <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
-</div>
-
-<footer>
-  <h2>Graphic Design by <a href="https://www.linkedin.com/in/heathbauman/">Heath Bauman</a></h2>
-</footer>
