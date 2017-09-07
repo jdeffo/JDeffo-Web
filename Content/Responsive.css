@@ -3,17 +3,48 @@
     .leftPane {
         width: 100%;
     }
-    .introPane {
+    .titleSection {
+        text-align: center;
+    }
+    .deffoLogo {
+        float: none;
+    }
+    .deffoTitle {
+        float: none;
+    }
+    .aboutPane {
         width: 100%;
         height: auto;
+    }
+    .introTxt {
+        margin-top: 5%;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .quoteTxt{
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
     }
     .skillsPane {
         width: 100%;
         height: auto;
     }
     .portfolioPane {
+        background-color: #ecf0f1;
         width: 100%;
         height: auto;
+    }
+    .portSlide {
+        width: 75%;
+        height: 75%;
+    }
+    .portSlide h1 {
+        font-size: 75%;
+    }
+    .portSlide h3 {
+        font-size: 75%;
     }
     .contactPane {
         width: 100%;

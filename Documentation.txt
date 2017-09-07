@@ -178,3 +178,9 @@ Stacked Contact section
 Behind on documenting, will update all changes later
 Today: updated Portfolio page to pull displayed projects from an angular Model
 using ng-repeat
+
+9/6/2017
+Went awhile without documenting
+
+Completed the second iteration of the design.  Fully functional and responsive
+    -Additional features/tweaks still to come
