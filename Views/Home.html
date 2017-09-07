@@ -3,35 +3,47 @@
 
     <div class="titleSection">
         <img class="deffoLogo" src="Images/deffoLogo.png">
-        <h3 style="float: left;">Jeremy DeFossett</h3>
-        <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
+        <h3 class="deffoTitle">Jeremy DeFossett</h3>
+        <!--<div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>-->
     </div>
 
     <div class="navSection">
         <ul>
             <li>
                 <a class="navLink" href ng-click="hctrl.controller.togglePane('intro')"
-                ng-hide="hctrl.controller.showIntroPane" >About</a>
+                ng-hide="hctrl.controller.showAboutPane || hctrl.controller.showMobile" >About</a>
                 <a href style="text-decoration: underline;"
-                ng-show="hctrl.controller.showIntroPane"><b>About</b></a>
+                ng-show="hctrl.controller.showAboutPane"><b>About</b></a>
+                <!--Mobile-->
+                <a class="navLink" href ng-click="hctrl.controller.scrollMobile('about')"
+                ng-show="hctrl.controller.showMobile" >About</a>
             </li>
             <li>
                 <a class="navLink" href ng-click="hctrl.controller.togglePane('skills')"
-                ng-hide="hctrl.controller.showSkillsPane" >Skills</a>
+                ng-hide="hctrl.controller.showSkillsPane || hctrl.controller.showMobile" >Skills</a>
                 <a href style="text-decoration: underline;"
                 ng-show="hctrl.controller.showSkillsPane"><b>Skills</b></a>
+                <!--Mobile-->
+                <a class="navLink" href ng-click="hctrl.controller.scrollMobile('skills')"
+                ng-show="hctrl.controller.showMobile" >Skills</a>
             </li>
             <li>
                 <a href ng-click="hctrl.controller.togglePane('portfolio')"
-                ng-hide="hctrl.controller.showPortfolioPane">Portfolio</a>
+                ng-hide="hctrl.controller.showPortfolioPane || hctrl.controller.showMobile">Portfolio</a>
                 <a href style="text-decoration: underline;"
                 ng-show="hctrl.controller.showPortfolioPane"><b>Portfolio</b></a>
+                <!--Mobile-->
+                <a href ng-click="hctrl.controller.scrollMobile('portfolio')"
+                ng-show="hctrl.controller.showMobile">Portfolio</a>
             </li>
             <li>
                 <a href ng-click="hctrl.controller.togglePane('contact')"
-                ng-hide="hctrl.controller.showContactPane">Contact</a>
+                ng-hide="hctrl.controller.showContactPane || hctrl.controller.showMobile">Contact</a>
                 <a href style="text-decoration: underline;"
                 ng-show="hctrl.controller.showContactPane"><b>Contact</b></a>
+                <!--Mobile-->
+                <a href ng-click="hctrl.controller.scrollMobile('contact')"
+                ng-show="hctrl.controller.showMobile">Contact</a>
             </li>
         </ul>
     </div>
@@ -49,19 +61,20 @@
             </a>
         </div>
     </div>
-
 </div>
-
 <!--Content side-->
-<div class="introPane" ng-show="hctrl.controller.showIntroPane">
 
-    <div class="introTitle">
+<!--About-->
+<div id="about" class="aboutPane" ng-show="hctrl.controller.showAboutPane || hctrl.controller.showMobile">
+
+    <div class="aboutTitle">
         <h1>Why</h1>
         <h3>What</h3>
         <h2>How</h2>
         <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
     </div>
-    <div class="introTxt">
+
+    <div class="aboutTxt">
         <p>Simon Sinek stated that great leaders start with why, rather than what.
             Why am I here?  I want to empower people with great technologies
         in order for them to achieve their goals and desires.  How do I accomplish this?
@@ -79,32 +92,72 @@
         <h3>"When you want to succeed, as bad as you want to breathe, then you'll be successful"</h3>
     </div>
 
-    <!--<div class="resume">
+    <div class="resume">
         <a href="../Downloadables/Resume-DeFossett.pdf"
-        download="Resume-DeFossett.pdf"><button type="button" class="resumeButton">Résumé</button></a>
-    </div>-->
+        download="Resume-DeFossett.pdf" style="text-decoration: underline"><h2>Resume</h2></a>
+    </div>
+</div>
 
+<!--Skills-->
+<div id="skills" class="skillsPane" ng-show="hctrl.controller.showSkillsPane || hctrl.controller.showMobile">
 </div>
-<div class="skillsPane" ng-show="hctrl.controller.showSkillsPane">
-</div>
-<div class="portfolioPane" ng-show="hctrl.controller.showPortfolioPane">
+
+<!--Portfolio-->
+<div id="portfolio" class="portfolioPane" ng-show="hctrl.controller.showPortfolioPane || hctrl.controller.showMobile">
 
     <h1>Portfolio</h1>
 
-    <div class="projWrap" ng-repeat="card in hctrl.controller.cardList">
-        <a href="{{card.link}}">
-            <img style="width: 100%;" src="{{card.image}}">
-        </a>
-        <h3>{{card.title}}</h3>
+    <!--Carousel-->
+    <div class="container portSlide">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: 100%;">
+            <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+              <div class="item active">
+                  <a href="https://github.com/jdeffo/JDeffo-Web" target="_blank">
+                      <img src="Images/stockCode1.png" alt="JDeffo-Web" style="width:100%;">
+                  </a>
+                <div class="carousel-caption">
+                <h1 style="color: white; font-family: Arial;">JDeffo-Web</h1>
+                <h3 style="color: white; font-family: Arial;">The current site you are on</h3>
+                </div>
+              </div>
+
+              <div class="item">
+                  <a href="https://github.com/jdeffo/Various-Scripts" target="_blank">
+                      <img src="Images/stockCode2.png" alt="Various Scripts" style="width:100%;">
+                  </a>
+                <div class="carousel-caption">
+                    <h1 style="color: white; font-family: Arial;">Various Scripts</h1>
+                    <h3 style="color: white; font-family: Arial;">Python Scripts that make my life easier</h3>
+                </div>
+              </div>
+            </a>
+
+            <div class="item">
+                <a href="https://github.com/jdeffo/To-Do-List" target="_blank">
+                    <img src="Images/stockCode3.png" alt="To-Do-List" style="width:100%;">
+                </a>
+                <div class="carousel-caption">
+                    <h1 style="color: white; font-family: Arial;">To-Do-List</h1>
+                    <h3 style="color: white; font-family: Arial;">A Python to-do-list to stay organized</h3 >
+                </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
-
+    <h2>The rest of my projects can be viewed at <a href="https://www.github.com/jdeffo" target="_blank" style="text-decoration: underline;">
+        github.com/jdeffo</a>
+    </h2>
 </div>
 
-
-<div class="contactPane" ng-show="hctrl.controller.showContactPane">
+<!--Contact-->
+<div id="contact" class="contactPane" ng-show="hctrl.controller.showContactPane || hctrl.controller.showMobile">
 
     <div class="contactInfo">
       <h2>Contact Information</h2>
@@ -113,7 +166,6 @@
         <p><span class="underline">School Email:</span> jdefosse@indiana.edu</p>
         <p><span class="underline">Personal Email:</span> jdefossett@gmail.com</p>
         <p><span class="underline">Work Email:</span> jdefossett1@humana.com</p>
-
     </div>
 
     <div class="contactForm">
@@ -126,13 +178,11 @@
           ng-model="cctrl.model.contact.email" ng-required="true"/><br>
           <textarea placeholder="Your Message" name="message" class="form-control"
           ng-model="cctrl.model.contact.message" ng-required="true"></textarea><br>
-          <input type="submit" value="Send" class="resumeButton" style="width: 13%;"/>
+          <input type="submit" value="Send" class="contactButton"/>
           <!--ng-disabled="contactForm.$invalid"-->
       </form>
 
       {{cctrl.model.contact.result}}
     </div>
-
 </div>
-
 <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
