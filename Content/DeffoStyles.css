@@ -180,6 +180,10 @@ a:active {
 }
 
 /*~~~Utilities~~~*/
+.missingSymbol {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 85%;
+}
 .underline {
     text-decoration: underline;
 }
