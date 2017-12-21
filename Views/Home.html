@@ -4,6 +4,7 @@
     <div class="titleSection">
         <img class="deffoLogo" src="Images/deffoLogo.png">
         <h3 class="deffoTitle">Jeremy DeFossett</h3>
+        <i>Developer.  Investor.</i>
         <!--<div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>-->
     </div>
 
@@ -83,9 +84,9 @@
         I attend Indiana University pursuing a bachelors degree in Computer Science, a certificate
         in Informatics, and a minor in business.  After graduating, I will be joining Deloitte as
         a Business Technology Analyst, and later down the road I plan to earn my Masters in Business
-        Administration.  I want to continue to work my way up, as I do not believe in complacency,
-        while giving back to
-        those around me.</p>
+        Administration.  I'm also an investor; always searching for new opportunities to invest in.
+        I want to continue to work my way up, as I do not believe in complacency, while giving back
+        to those around me.</p>
     </div>
 
     <div class="quoteTxt">
@@ -170,19 +171,17 @@
 
     <div class="contactForm">
       <hr />
-      <h2>Send Me a Message.  Free lance work, questions, anything.</h2>
-      <form name="contactForm" ng-submit="cctrl.controller.sendMessage()" novalidate class="form-group">
+      <h2>Send Me a Message.  Free lance development, investing, questions, anything.</h2>
+      <form name="contactForm" ng-submit="hctrl.controller.sendMessage()" novalidate class="form-group">
           <input type="text" placeholder="Name" name="name" class="form-control"
-          ng-model="cctrl.model.contact.name" ng-required="true"/><br>
+          ng-model="hctrl.model.contact.name" ng-required="true"/><br>
           <input type ="email" placeholder="Email" name="email" class="form-control"
-          ng-model="cctrl.model.contact.email" ng-required="true"/><br>
+          ng-model="hctrl.model.contact.email" ng-required="true"/><br>
           <textarea placeholder="Your Message" name="message" class="form-control"
-          ng-model="cctrl.model.contact.message" ng-required="true"></textarea><br>
+          ng-model="hctrl.model.contact.message" ng-required="true"></textarea><br>
           <input type="submit" value="Send" class="contactButton"/>
           <!--ng-disabled="contactForm.$invalid"-->
       </form>
-
-      {{cctrl.model.contact.result}}
     </div>
 </div>
 <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
