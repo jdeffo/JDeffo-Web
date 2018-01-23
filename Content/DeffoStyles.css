@@ -70,6 +70,9 @@ a:active {
     position: relative;
     width: 80%;
 }
+.aboutTitle {
+    font-family: "basic title font";
+}
 .aboutTitle h1 {
     float: left;
     font-size: 650%;
@@ -190,7 +193,7 @@ a:active {
 html,body{
     height:100%;
     padding-top: 0;
-    font-family: "basic title font";
+    font-family: "myriad pro regular";
     background-color: #cecece;
     margin: 0;
 }
