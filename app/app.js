@@ -55,6 +55,26 @@ JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScr
             $location.hash(loc);
             $anchorScroll();
         },
+        sendMessage: function() {
+            /*$.post("sendInquiry", inquiry, function(){
+
+            });*/
+            /*$.getJSON('http://127.0.0.1:5000/sendInquiry', {
+                key: inquiry,
+            }, function(data){
+                // Handles the callback when the data returns
+            });*/
+            $.ajax({
+                url:'http://127.0.0.1:5000/sendInquiry',
+                type: 'POST',
+                data: JSON.stringify(vm.model.contact),
+                contentType: "application/json",
+                success: function(data) {
+                }
+            })
+            event.preventDefault();
+            vm.model.clearContact();
+        },
         /*Init to check display size to determine whether to show
         desktop or mobile design*/
         init: function() {
@@ -67,6 +87,16 @@ JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScr
                 this.showContactPane = false;
             }
         },
+    };
+    vm.model = {
+        contact: {
+            name: null,
+            email: null,
+            message: null,
+        },
+        clearContact: function() {
+            this.contact = [];
+        }
     };
     vm.controller.init();
 });

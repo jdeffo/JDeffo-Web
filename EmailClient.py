@@ -14,9 +14,6 @@ import base64
 from apiclient import errors
 import random
 import time
-from flask import Flask, render_template, redirect, url_for, request, flash, session
-app = Flask(__name__, static_url_path='')
-app.config['SECRET_KEY'] = 'secret!'
 
 try:
     import argparse
@@ -26,9 +23,9 @@ except ImportError:
 
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/gmail-python-quickstart.json
-SCOPES = 'https://www.googleapis.com/auth/gmail.send'
+SCOPES = 'https://mail.google.com/'
 CLIENT_SECRET_FILE = 'client_secret.json'
-APPLICATION_NAME = 'Python Gmail API'
+APPLICATION_NAME = 'Gmail API Python Quickstart'
 
 
 def get_credentials():
@@ -71,27 +68,32 @@ def send_message(service, user_id, message):
     except errors.HttpError as error:
         print('An error occurred: %s' % error)
 
-@app.route("/sendEmail", methods=['GET', 'POST'])
-def composeEmail():
-    #name, email, body
-    #request.form.get
+def send_inquiry(subj, msg_txt):
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('gmail', 'v1', http=http)
 
     sender = "jdefossett@gmail.com"
-    subject = "Message from JDeffo-Web"
-    to = "jdefosse@umail.iu.edu"
-    #message_text = input.name + "\n\n" + input.body + "\n\n" + input.email
-    message_text = "This is a test"
+    to = "jdefossett@gmail.com"
+    subject = subj
+    message_text = msg_txt
 
     msg = create_message(sender, to, subject, message_text)
     send_message(service, "me", msg)
 
-@app.route('/')
 def main():
 
-    composeEmail()
+    credentials = get_credentials()
+    http = credentials.authorize(httplib2.Http())
+    service = discovery.build('gmail', 'v1', http=http)
+
+    sender = "jdefossett@gmail.com"
+    to = "jdefossett@gmail.com"
+    subject = "Test subject"
+    message_text = "Test body"
+
+    msg = create_message(sender, to, subject, message_text)
+    send_message(service, "me", msg)
 
 if __name__ == '__main__':
-        app.run(host=os.getenv('IP', '0.0.0.0'), port =int(os.getenv('PORT', 8080)), debug=True)
+    main()
