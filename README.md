@@ -10,13 +10,9 @@ My portfolio website: A place for visiters to get to know me, download my resume
 * CSS
 * JavaScript
 * AngularJS - For single page application and routing
+* Python & Flask
 
 IDE USED: ATOM
-
-## Versioning
-
-#### Current Version: V2
-Past versions can be found in the [Depricated Folder](https://github.com/jdeffo/JDeffo-Web/tree/master/Depricated)
 
 ## Authors
 
