@@ -3,7 +3,7 @@ var JDeffoApp = angular.module('JDeffoApp', ['ngRoute', 'ui.bootstrap']);
 JDeffoApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/home', {
-            templateUrl: 'Views/Home.html',
+            templateUrl: 'Views/Portfolio-Home.html',
             controller: 'HomeController',
             controllerAs: 'hctrl',
             caseInsensitiveMatch: true,

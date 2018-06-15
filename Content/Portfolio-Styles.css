@@ -1,0 +1,212 @@
+/*Master Style Sheet*
+ *Organized by section*
+ *Styles by alphabetical order*
+*/
+/*Navigation*/
+.leftPane {
+    background-color: #ecf0f1;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 20%;
+}
+.titleSection {
+    margin-top: 20%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.deffoLogo {
+    border-radius: 50%;
+    width: 20%;
+}
+.deffoTitle {
+    font-size: 160%;
+}
+.navSection {
+    margin-top: 15%;
+    text-align: center;
+    width: 100%;
+}
+.navSection ul {
+    line-height: 1.6;
+    margin: 2px auto;
+    padding-left: 0;
+}
+.navSection li {
+    font-size: 200%;
+    text-align: center;
+}
+.navSection
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+.socialMediaSection {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.links {
+    margin-bottom: 5%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+/*~~~Content Section~~~*/
+
+/*About Pane*/
+.aboutPane {
+    background-color: white;
+    float: left;
+    height: 100%;
+    padding-top: 5%;
+    position: relative;
+    width: 80%;
+}
+.aboutTitle {
+    font-family: "basic title font";
+}
+.aboutTitle h1 {
+    float: left;
+    font-size: 650%;
+    padding: 0;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+.aboutTitle h2 {
+    font-size: 400%;
+    padding: 0;
+}
+.aboutTitle h3 {
+    font-size: 250%;
+    padding: 0;
+}
+.aboutTxt {
+    color: #f4f4f4;
+    margin: 3% 0 0 2%;
+    position: relative;
+    width: 90%;
+}
+.aboutTxt p {
+    color: grey;
+    font-size: 150%;
+}
+.quoteTxt {
+    color: grey;
+    margin: 0 0 0 2%;
+    width: 100%;
+}
+.quoteTxt p {
+    font-size: 140%;
+}
+.resume {
+    padding-top: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+/*Portfolio Pane*/
+.portfolioPane {
+    background-color: white;
+    float: left;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 80%;
+}
+.portfolioPane h1 {
+    font-size: 500%;
+    margin: 3% 0 0 0;
+}
+.portSlide {
+    height: 65%;
+    width: 65%;
+}
+.item img {
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+}
+/*Contact Pane*/
+.contactPane {
+    background-color: white;
+    float: left;
+    height: 100%;
+    padding-top: 2%;
+    position: relative;
+    width: 80%;
+}
+.contactForm {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 60%;
+}
+.contactInfo {
+    text-align: center;
+}
+.contactInfo p {
+    font-size: 140%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+/*.contactButton {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #b8b8b8);
+  background-image: -moz-linear-gradient(top, #ffffff, #b8b8b8);
+  background-image: -ms-linear-gradient(top, #ffffff, #b8b8b8);
+  background-image: -o-linear-gradient(top, #ffffff, #b8b8b8);
+  background-image: linear-gradient(to bottom, #ffffff, #b8b8b8);
+  -webkit-box-shadow: 0px 1px 4px #666666;
+  -moz-box-shadow: 0px 1px 4px #666666;
+  box-shadow: 0px 1px 4px #666666;
+  color: #000000;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.contactButton:hover {
+  background: #c7c7c7;
+  background-image: -webkit-linear-gradient(top, #c7c7c7, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #c7c7c7, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #c7c7c7, #e0e0e0);
+  background-image: -o-linear-gradient(top, #c7c7c7, #e0e0e0);
+  background-image: linear-gradient(to bottom, #c7c7c7, #e0e0e0);
+  text-decoration: none;
+}*/
+.contactButton {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: "myriad pro regular";
+  color: #ffffff;
+  font-size: 20px;
+  background: #423b42;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contactButton:hover {
+  background: #000000;
+  text-decoration: none;
+}
+
+/*~~~Utilities~~~*/
+
+.underline {
+    text-decoration: underline;
+}
+html,body{
+    height:100%;
+    padding-top: 0;
+    font-family: "myriad pro regular";
+    background-color: #cecece;
+    margin: 0;
+}
