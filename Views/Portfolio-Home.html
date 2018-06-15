@@ -1,0 +1,175 @@
+<!--Navigation Side-->
+<div class="leftPane">
+
+    <div class="titleSection">
+        <img class="deffoLogo" src="Images/Portfolio-Deffo-Logo.png">
+        <h3 class="deffoTitle">Jeremy DeFossett</h3>
+        <i>Developer.  Investor.</i><br/>
+        <i>Consultant.</i>
+        <!--<div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>-->
+    </div>
+
+    <div class="navSection">
+        <ul>
+            <li>
+                <a class="navLink" href ng-click="hctrl.controller.togglePane('intro')"
+                ng-hide="hctrl.controller.showAboutPane || hctrl.controller.showMobile" >About</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showAboutPane"><b>About</b></a>
+                <!--Mobile-->
+                <a class="navLink" href ng-click="hctrl.controller.scrollMobile('about')"
+                ng-show="hctrl.controller.showMobile" >About</a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('portfolio')"
+                ng-hide="hctrl.controller.showPortfolioPane || hctrl.controller.showMobile">Portfolio</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showPortfolioPane"><b>Portfolio</b></a>
+                <!--Mobile-->
+                <a href ng-click="hctrl.controller.scrollMobile('portfolio')"
+                ng-show="hctrl.controller.showMobile">Portfolio</a>
+            </li>
+            <li>
+                <a href ng-click="hctrl.controller.togglePane('contact')"
+                ng-hide="hctrl.controller.showContactPane || hctrl.controller.showMobile">Contact</a>
+                <a href style="text-decoration: underline;"
+                ng-show="hctrl.controller.showContactPane"><b>Contact</b></a>
+                <!--Mobile-->
+                <a href ng-click="hctrl.controller.scrollMobile('contact')"
+                ng-show="hctrl.controller.showMobile">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="socialMediaSection">
+        <div class="links">
+            <a href="https://github.com/jdeffo/" style="margin-right: 8%;">
+                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/jdefossett/">
+                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:jdefossett@gmail.com" style="margin-left: 8%;">
+                <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!--Content side-->
+
+<!--About Jeremy DeFossett-->
+<div id="about" class="aboutPane" ng-show="hctrl.controller.showAboutPane || hctrl.controller.showMobile">
+
+    <div class="aboutTitle">
+        <h1>Why</h1>
+        <h3>What</h3>
+        <h2>How</h2>
+        <div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
+    </div>
+
+    <div class="aboutTxt">
+        <p>Simon Sinek stated that great leaders start with why, rather than what.
+            Why am I here?  I want to empower people with great technologies
+        in order for them to achieve their goals and desires.  How do I accomplish this?
+        By working to the best of my ability, constantly learn new technologies, and
+        better myself on a daily basis.  So what do I do?  I'm a developer.
+        I attend Indiana University pursuing a bachelors degree in Computer Science, a certificate
+        in Informatics, and a minor in business.  After graduating, I will be joining Deloitte as
+        a Business Technology Analyst, and later down the road I plan to earn my Masters in Business
+        Administration.  I'm also an investor; always searching for new opportunities to invest in.
+        I want to continue to work my way up the consulting and investing ladders, as I do not
+        believe in complacency, while giving back to those around me.</p>
+    </div>
+
+    <div class="quoteTxt">
+        <h3>"When you want to succeed, as bad as you want to breathe, then you'll be successful"</h3>
+    </div>
+
+    <div class="resume">
+        <a href="../Downloadables/Resume-DeFossett.pdf"
+        download="Resume-DeFossett.pdf" style="text-decoration: underline"><h2>Resume</h2></a>
+    </div>
+</div>
+
+<!--Jeremy DeFossett Computer Science Portfolio-->
+<div id="portfolio" class="portfolioPane" ng-show="hctrl.controller.showPortfolioPane || hctrl.controller.showMobile">
+
+    <h1>Portfolio</h1>
+
+    <!--Carousel-->
+    <div class="container portSlide">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: 100%;">
+            <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+              <div class="item active">
+                  <a href="https://github.com/jdeffo/JDeffo-Web" target="_blank">
+                      <img src="http://res.cloudinary.com/jdeffo/image/upload/q_50/v1521774729/stockCode1.jpg" alt="JDeffo-Web" style="width:100%;">
+                  </a>
+                <div class="carousel-caption">
+                <h1 style="color: white; font-family: Arial;">JDeffo-Web</h1>
+                <h3 style="color: white; font-family: Arial;">The current site you are on</h3>
+                </div>
+              </div>
+
+              <div class="item">
+                  <a href="https://github.com/jdeffo/Various-Scripts" target="_blank">
+                      <img src="https://res.cloudinary.com/jdeffo/image/upload/q_50/v1521774734/stockCode2.jpg" alt="Various Scripts" style="width:100%;">
+                  </a>
+                <div class="carousel-caption">
+                    <h1 style="color: white; font-family: Arial;">Various Scripts</h1>
+                    <h3 style="color: white; font-family: Arial;">Python Scripts that make my life easier</h3>
+                </div>
+              </div>
+            </a>
+
+            <div class="item">
+                <a href="https://github.com/jdeffo/To-Do-List" target="_blank">
+                    <img src="http://res.cloudinary.com/jdeffo/image/upload/q_50/v1521774709/stockCode3.jpg" alt="To-Do-List" style="width:100%;">
+                </a>
+                <div class="carousel-caption">
+                    <h1 style="color: white; font-family: Arial;">To-Do-List</h1>
+                    <h3 style="color: white; font-family: Arial;">A Python to-do-list to stay organized</h3 >
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>The rest of my projects can be viewed at <a href="https://www.github.com/jdeffo" target="_blank" style="text-decoration: underline;">
+        github.com/jdeffo</a>
+    </h2>
+</div>
+
+<!--Contact Jeremy DeFossett-->
+<div id="contact" class="contactPane" ng-show="hctrl.controller.showContactPane || hctrl.controller.showMobile">
+
+    <div class="contactInfo" style="color: black;">
+      <h2>Contact Information</h2>
+        <p><span class="underline">LinkedIn:</span> linkedin.com/in/jdefossett</p>
+        <p><span class="underline">GitHub:</span> Github.com/jdeffo</p>
+        <p><span class="underline">School Email:</span> jdefosse@indiana.edu</p>
+        <p><span class="underline">Personal Email:</span> jdefossett@gmail.com</p>
+        <p><span class="underline">Work Email:</span> jdefossett1@humana.com</p>
+    </div>
+
+    <div class="contactForm">
+      <hr />
+      <h2>Send Me a Message.  Free lance development, investing, questions, anything.</h2>
+      <form name="contactForm" ng-submit="hctrl.controller.sendMessage()" novalidate class="form-group">
+          <input type="text" placeholder="Name" name="name" class="form-control"
+          ng-model="hctrl.model.contact.name" ng-required="true"/><br>
+          <input type ="email" placeholder="Email" name="email" class="form-control"
+          ng-model="hctrl.model.contact.email" ng-required="true"/><br>
+          <textarea placeholder="Your Message" name="message" class="form-control"
+          ng-model="hctrl.model.contact.message" ng-required="true"></textarea><br>
+          <input type="subm it" value="Send" class="contactButton"/>
+          <!--ng-disabled="contactForm.$invalid"-->
+      </form>
+    </div>
+</div>
+<div style="display: table; width: 0; height: 0; clear: both; visibility: none;"></div>
