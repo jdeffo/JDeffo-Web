@@ -1,4 +1,4 @@
-from Email-Client import *
+from Email_Client import *
 from flask import Flask, render_template, request, redirect, Response
 import random, json
 from flask_cors import *

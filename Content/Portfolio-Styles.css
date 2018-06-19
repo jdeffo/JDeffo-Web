@@ -198,6 +198,11 @@ a:active {
   text-decoration: none;
 }
 
+.messageSuccess {
+    background-color: #2dc42f;
+    color: white;
+}
+
 /*~~~Utilities~~~*/
 
 .underline {

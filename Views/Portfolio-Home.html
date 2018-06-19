@@ -152,7 +152,6 @@
       <h2>Contact Information</h2>
         <p><span class="underline">LinkedIn:</span> linkedin.com/in/jdefossett</p>
         <p><span class="underline">GitHub:</span> Github.com/jdeffo</p>
-        <p><span class="underline">School Email:</span> jdefosse@indiana.edu</p>
         <p><span class="underline">Personal Email:</span> jdefossett@gmail.com</p>
         <p><span class="underline">Work Email:</span> jdefossett1@humana.com</p>
     </div>
@@ -160,6 +159,9 @@
     <div class="contactForm">
       <hr />
       <h2>Send Me a Message.  Free lance development, investing, questions, anything.</h2>
+      <div class="messageSuccess" ng-show="hctrl.controller.showMessageSuccess">
+          <h2>Message Sent!</h2>
+      </div>
       <form name="contactForm" ng-submit="hctrl.controller.sendMessage()" novalidate class="form-group">
           <input type="text" placeholder="Name" name="name" class="form-control"
           ng-model="hctrl.model.contact.name" ng-required="true"/><br>
@@ -167,7 +169,7 @@
           ng-model="hctrl.model.contact.email" ng-required="true"/><br>
           <textarea placeholder="Your Message" name="message" class="form-control"
           ng-model="hctrl.model.contact.message" ng-required="true"></textarea><br>
-          <input type="subm it" value="Send" class="contactButton"/>
+          <input type="submit" value="Send" class="contactButton"/>
           <!--ng-disabled="contactForm.$invalid"-->
       </form>
     </div>
