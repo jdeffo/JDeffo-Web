@@ -13,7 +13,7 @@ JDeffoApp.config(['$routeProvider', function($routeProvider){
         })
 }]);
 
-JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScroll){
+JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScroll, $timeout){
     var vm = this;
 
     vm.controller = {
@@ -23,6 +23,7 @@ JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScr
         showPortfolioPane: false,
         showContactPane: false,
         showMobile: false,
+        showMessageSuccess: false,
         //Show pane on desktop
         togglePane: function(select) {
             if(select == "intro") {
@@ -70,10 +71,19 @@ JDeffoApp.controller('HomeController', function($uibModal, $location, $anchorScr
                 data: JSON.stringify(vm.model.contact),
                 contentType: "application/json",
                 success: function(data) {
+
                 }
             })
             event.preventDefault();
             vm.model.clearContact();
+            //showMessageSuccess
+            $timeout(function() {
+                vm.controller.showMessageSuccess = true;
+            }, 500);
+            //hideMessageSuccess
+            $timeout(function() {
+                vm.controller.showMessageSuccess = false;
+            }, 3000);
         },
         /*Init to check display size to determine whether to show
         desktop or mobile design*/
